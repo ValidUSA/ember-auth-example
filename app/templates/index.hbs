@@ -1,0 +1,11 @@
+{{#if session.isAuthenticated}}
+<ul>
+  <li>{{#link-to "facebook"}}Facebook{{/link-to}}</li>
+  <li>{{#link-to "google"}}Google{{/link-to}}</li>
+  <li>{{#link-to "github"}}Github{{/link-to}}</li>
+</ul>
+Welcome logged in user!
+If you like to logout click {{#link-to 'logout'}}here{{/link-to}}
+{{else}}
+Click here to {{#link-to 'login'}}login!{{/link-to}}
+{{/if}}
